@@ -1,0 +1,19 @@
+body {
+    background: red
+}
+
+.root {
+    /* */
+}
+
+.list {
+    /* */
+}
+
+
+.MyComponent {
+
+    & + & {
+        color: green
+    }
+}
