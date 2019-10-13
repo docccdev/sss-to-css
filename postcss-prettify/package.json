@@ -1,0 +1,7 @@
+{
+  "main": "index.js",
+  "dependencies": {
+    "defined": "1.0.0",
+    "postcss": "5.0.19"
+  }
+}
