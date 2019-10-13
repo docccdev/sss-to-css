@@ -30,4 +30,12 @@ function changeImportSSS() {
         .pipe(dest(SRC_PATH));
 }
 
-exports.default = series(convertSSS, changeImportSSS);
+function prettifyCSS() {
+    return src(SRC_PATH + '**/*.css')
+        .pipe(gulpPostcss([
+            require('postcss-prettify')
+        ]))
+        .pipe(dest(SRC_PATH));
+}
+
+exports.default = series(convertSSS, prettifyCSS, changeImportSSS);

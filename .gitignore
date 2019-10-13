@@ -1,1 +1,3 @@
 node_modules
+postcss-prettify/*
+!postcss-prettify/dist
